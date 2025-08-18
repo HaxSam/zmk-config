@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
 
 / {
     chosen { zmk,physical-layout = &default_layout; };
@@ -27,12 +26,26 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &kp LCTRL  &mt LEFT_SHIFT A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &mt RIGHT_SHIFT SEMI  &kp SQT  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC  &kp LGUI  &mo 1  &kp SPACE  &kp RET  &kp SPACE  &kp RALT
+&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &kp LCTRL  &mt LEFT_SHIFT A  &mt CAPS S  &mt LCTRL D  &mt LWIN F  &kp G  &kp H  &mt RWIN J  &mt RCTRL K  &mt CAPS L  &mt RIGHT_SHIFT SEMI  &kp SQT  &sl 5  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC  &kp LALT  &mo 4  &kp SPACE  &kp RET  &kp SPACE  &to 3
             >;
         };
 
-        lower_layer {
-            display-name = "NUMBER";
+        gaming_layer {
+            display-name = "GAMING";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp A  &kp S  &kp D  &kp F  &trans  &trans  &kp J  &kp K  &kp L  &kp SEMI  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Noted {
+            display-name = "NOTED";
+            bindings = <
+&trans  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &trans  &trans  &mt LEFT_SHIFT C  &lt 4 S  &kp I  &kp E  &kp O  &kp D  &kp T  &kp N  &kp R  &kp H  &trans  &trans  &kp V  &kp X  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        mod_4_layer {
+            display-name = "MOD 4";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5    |  6  |  7  |  8  |  9  |  0  | BSPC |
@@ -41,49 +54,21 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC  &kp LCTRL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &kp LSHFT  &bt BT_CLR  &rgb_ug RGB_TOG  &sys_reset  &bootloader  &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans  &kp LGUI  &trans  &kp SPACE  &kp LGUI  &trans  &kp SPACE
+&kp TAB  &kp PG_UP  &kp BACKSPACE  &kp UP  &kp DEL  &kp PG_DN  &trans  &kp N7  &kp N8  &kp N9  &trans  &kp BSPC  &kp LCTRL  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &trans  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &trans  &trans  &kp LSHFT  &bt BT_CLR  &kp TAB  &kp INS  &kp RET  &studio_unlock  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &kp LGUI  &trans  &kp SPACE  &kp LGUI  &kp N0  &kp RET
             >;
         };
 
-        raise_layer {
-            display-name = "SYMBOL";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC | ENT |     | ALT |
-
-            bindings = <
-&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC  &kp LCTRL  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp RALT
-            >;
-        };
-
-        extra_layer_1 {
-            display-name = "EXTRA 1";
+        mod_3_layer {
+            display-name = "MOD 3";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        extra_layer_2 {
-            display-name = "EXTRA 2";
+        layer_switching {
+            display-name = "LAYERS";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_3 {
-            display-name = "EXTRA 3";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_4 {
-            display-name = "EXTRA 4";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 0  &to 1  &to 2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
