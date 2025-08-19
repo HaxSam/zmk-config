@@ -50,7 +50,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp RIGHT_BRACKET  &kp CAPS  &mt LEFT_SHIFT A  &mt LEFT_GUI S  &mt LEFT_ALT D  &mt LCTRL F  &kp G  &kp H  &mt RCTRL J  &mt LEFT_ALT K  &mt RGUI L  &mt RIGHT_SHIFT SEMI  &kp LEFT_BRACKET  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &oa_qwerty  &sl 5  &mo 3  &trans  &kp RET  &kp SPACE  &mo 3
+&oa_qwerty  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LEFT_BRACKET  &kp CAPS  &mt LEFT_SHIFT A  &mt LEFT_GUI S  &mt LEFT_ALT D  &mt LCTRL F  &kp G  &kp H  &mt RCTRL J  &mt LEFT_ALT K  &mt RGUI L  &mt RIGHT_SHIFT SEMI  &kp LEFT_BRACKET  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET  &sl 5  &mo 3  &trans  &kp RET  &kp SPACE  &mo 3
             >;
         };
 
@@ -64,7 +64,7 @@
         Noted {
             display-name = "NOTED";
             bindings = <
-&trans  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp RA(S)  &trans  &mt LEFT_SHIFT C  &mt LGUI S  &mt LALT I  &mt LCTRL E  &kp O  &kp D  &mt RCTRL T  &mt LEFT_ALT N  &mt RGUI R  &mt RSHFT H  &kp J  &trans  &kp V  &kp X  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp RA(W)  &trans  &trans  &trans  &trans  &trans  &trans
+&kp RA(W)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 4  &mt LEFT_SHIFT C  &mt LGUI S  &mt LALT I  &mt LCTRL E  &kp O  &kp D  &mt RCTRL T  &mt LEFT_ALT N  &mt RGUI R  &mt RSHFT H  &mo 4  &trans  &kp V  &kp X  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp RA(S)  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -78,7 +78,7 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp PG_UP  &kp BACKSPACE  &kp UP  &kp DEL  &kp PG_DN  &trans  &kp N7  &kp N8  &kp N9  &trans  &kp BSPC  &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &trans  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &trans  &trans  &trans  &bt BT_CLR  &kp TAB  &kp INS  &kp RET  &studio_unlock  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &trans  &trans  &kp SPACE  &trans  &kp N0  &kp RET
+&trans  &kp PG_UP  &kp BACKSPACE  &kp UP  &kp DEL  &kp PG_DN  &trans  &kp N7  &kp N8  &kp N9  &trans  &kp BSPC  &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &trans  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &trans  &trans  &trans  &none  &kp TAB  &kp INS  &kp RET  &studio_unlock  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &trans  &trans  &kp SPACE  &trans  &kp N0  &kp RET
             >;
         };
 
