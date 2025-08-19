@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 &sl {
-    release-after-ms = <5000>;
+    release-after-ms = <2000>;
 
     /delete-property/ quick-release;
 };
@@ -37,11 +37,35 @@
         };
     };
 
+    behaviors {
+        left_mod_tap: left_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Left mod tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <6 18 30 31 7 8 20 19 8 9 10 11 20 21 22 23 32 33 35 34 39 40 41>;
+            tapping-term-ms = <80>;
+            flavor = "tap-preferred";
+        };
+
+        right_mod_tap: right_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Right mod tap";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <80>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "QWERTY";
+            display-name = "Qwerty";
 
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |  Y  |  U   |  I  |  O  |  P  | BSPC |
@@ -50,26 +74,48 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&oa_qwerty  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LEFT_BRACKET  &kp CAPS  &mt LEFT_SHIFT A  &mt LEFT_GUI S  &mt LEFT_ALT D  &mt LCTRL F  &kp G  &kp H  &mt RCTRL J  &mt LEFT_ALT K  &mt RGUI L  &mt RIGHT_SHIFT SEMI  &kp LEFT_BRACKET  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET  &sl 5  &mo 3  &trans  &kp RET  &kp SPACE  &mo 3
+&oa_qwerty  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LEFT_BRACKET  &kp CAPS  &left_mod_tap LEFT_SHIFT A  &left_mod_tap LEFT_GUI S  &left_mod_tap LEFT_ALT D  &left_mod_tap LCTRL F  &kp G  &kp H  &right_mod_tap RCTRL J  &right_mod_tap LEFT_ALT K  &right_mod_tap RGUI L  &right_mod_tap RIGHT_SHIFT SEMI  &kp LEFT_BRACKET  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET  &sl 7  &mo 6  &trans  &kp RET  &kp SPACE  &mo 6
             >;
         };
 
         gaming_layer {
-            display-name = "GAMING";
+            display-name = "Gaming";
             bindings = <
-&kp TAB  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LPAR  &kp CAPS  &kp A  &kp S  &kp D  &kp F  &trans  &trans  &kp J  &kp K  &kp L  &kp SEMI  &kp SINGLE_QUOTE  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RSHFT  &sl 5  &kp SPACE  &kp SPACE  &trans  &kp SPACE  &trans
+&kp TAB  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LPAR  &kp CAPS  &kp A  &kp S  &kp D  &kp F  &trans  &trans  &kp J  &kp K  &kp L  &kp SEMI  &kp SINGLE_QUOTE  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RSHFT  &sl 7  &kp SPACE  &kp SPACE  &trans  &kp SPACE  &trans
             >;
         };
 
         Noted {
-            display-name = "NOTED";
+            display-name = "Noted";
             bindings = <
-&kp RA(W)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 4  &mt LEFT_SHIFT C  &mt LGUI S  &mt LALT I  &mt LCTRL E  &kp O  &kp D  &mt RCTRL T  &mt LEFT_ALT N  &mt RGUI R  &mt RSHFT H  &mo 4  &trans  &kp V  &kp X  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp RA(S)  &trans  &trans  &trans  &trans  &trans  &trans
+&kp RA(W)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 6  &left_mod_tap LEFT_SHIFT C  &left_mod_tap LGUI S  &left_mod_tap LALT I  &left_mod_tap LCTRL E  &kp O  &kp D  &right_mod_tap RCTRL T  &right_mod_tap LEFT_ALT N  &right_mod_tap RGUI R  &right_mod_tap RSHFT H  &mo 6  &trans  &kp V  &kp X  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp RA(S)  &sl 7  &mo 6  &trans  &trans  &kp SPACE  &mo 6
+            >;
+        };
+
+        Ipad {
+            bindings = <
+&kp LA(A)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &trans  &left_mod_tap LSHFT C  &kp S  &kp I  &kp E  &kp O  &kp D  &kp T  &kp N  &kp R  &kp H  &trans  &trans  &kp V  &kp X  &trans  &trans  &trans  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp BACKSLASH  &trans  &trans  &trans  &trans  &kp SPACE  &trans
+            >;
+
+            label = "Ipad";
+        };
+
+        mod_3_layer {
+            display-name = "Mod 3";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        ipad_mod3 {
+            display-name = "Mod 3i";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         mod_4_layer {
-            display-name = "MOD 4";
+            display-name = "Mod 4";
 
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5    |  6  |  7  |  8  |  9  |  0  | BSPC |
@@ -78,35 +124,21 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp PG_UP  &kp BACKSPACE  &kp UP  &kp DEL  &kp PG_DN  &trans  &kp N7  &kp N8  &kp N9  &trans  &kp BSPC  &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &trans  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &trans  &trans  &trans  &none  &kp TAB  &kp INS  &kp RET  &studio_unlock  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &trans  &trans  &kp SPACE  &trans  &kp N0  &kp RET
-            >;
-        };
-
-        mod_3_layer {
-            display-name = "MOD 3";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PG_UP  &kp BACKSPACE  &kp UP  &kp DEL  &kp PG_DN  &trans  &kp N7  &kp N8  &kp N9  &trans  &none  &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &trans  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &trans  &trans  &trans  &kp ESC  &kp TAB  &kp INS  &kp RET  &none  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &trans  &trans  &kp SPACE  &trans  &kp N0  &kp RET
             >;
         };
 
         layer_switching_and_bluetooth {
-            display-name = "LAYERS";
+            display-name = "Layers";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 3  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &to 0  &to 1  &to 2  &trans  &trans  &trans  &bt BT_CLR  &trans  &trans  &trans  &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 6  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &to 0  &to 1  &to 2  &trans  &trans  &trans  &bt BT_CLR  &trans  &trans  &trans  &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         f_keys_and_media {
-            display-name = "F LAYER";
+            display-name = "F Layer";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_6 {
-            display-name = "EXTRA 6";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
