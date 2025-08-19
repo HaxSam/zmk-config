@@ -35,6 +35,38 @@
 
             label = "OA_QWERTY";
         };
+
+        huetchen_noted: huetchen_noted {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LS(NUMBER_6) &kp SPACE>;
+
+            label = "HUETCHEN_NOTED";
+        };
+
+        tilde_noted: tilde_noted {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp TILDE &kp SPACE>;
+
+            label = "TILDE_NOTED";
+        };
+
+        quote_noted: quote_noted {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp DOUBLE_QUOTES &kp SPACE>;
+
+            label = "QUOTE_NOTED";
+        };
+
+        single_quote_noted: single_quote_noted {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp APOS &kp SPACE>;
+
+            label = "SINGLE_QUOTE_NOTED";
+        };
     };
 
     behaviors {
@@ -105,7 +137,7 @@
         mod_3_layer {
             display-name = "Mod 3";
             bindings = <
-&trans  &trans  &kp UNDER  &kp LBKT  &kp RBKT  &kp RS(NUMBER_6)  &kp EXCL  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL  &kp AMPS  &kp AT  &trans  &kp BSLH  &kp FSLH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp ASTRK  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp COLON  &trans  &trans  &kp HASH  &kp LA(N5)  &kp PIPE  &kp TILDE  &kp GRAVE  &kp PLUS  &kp PERCENT  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp SEMI  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp UNDER  &kp LBKT  &kp RBKT  &huetchen_noted  &kp EXCL  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL  &kp AMPS  &kp AT  &trans  &kp BSLH  &kp FSLH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp ASTRK  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp COLON  &trans  &trans  &kp HASH  &kp RA(N5)  &kp PIPE  &tilde_noted  &kp GRAVE  &kp PLUS  &kp PERCENT  &quote_noted  &single_quote_noted  &kp SEMI  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
