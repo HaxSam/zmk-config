@@ -76,7 +76,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&oa_qwerty  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LEFT_BRACKET  &kp CAPS  &left_mod_tap LEFT_SHIFT A  &left_mod_tap LEFT_GUI S  &left_mod_tap LEFT_ALT D  &left_mod_tap LCTRL F  &kp G  &kp H  &right_mod_tap RCTRL J  &right_mod_tap LEFT_ALT K  &right_mod_tap RGUI L  &right_mod_tap RIGHT_SHIFT SEMI  &kp LEFT_BRACKET  &kp SCROLLLOCK  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET  &sl 7  &mo 6  &trans  &kp RET  &kp SPACE  &mo 6
+&oa_qwerty  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LEFT_BRACKET  &kp CAPS  &left_mod_tap LEFT_SHIFT A  &left_mod_tap LEFT_GUI S  &left_mod_tap LEFT_ALT D  &left_mod_tap LCTRL F  &kp G  &kp H  &right_mod_tap RCTRL J  &right_mod_tap LEFT_ALT K  &right_mod_tap RGUI L  &right_mod_tap RIGHT_SHIFT SEMI  &kp CAPS  &kp SCROLLLOCK  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET  &sl 7  &mo 6  &trans  &kp RET  &kp SPACE  &mo 6
             >;
         };
 
@@ -96,7 +96,7 @@
 
         Ipad {
             bindings = <
-&kp LA(A)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &trans  &left_mod_tap LSHFT C  &kp S  &kp I  &kp E  &kp O  &kp D  &kp T  &kp N  &kp R  &kp H  &trans  &trans  &kp V  &kp X  &trans  &trans  &trans  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp BACKSLASH  &trans  &trans  &trans  &trans  &kp SPACE  &trans
+&kp RA(A)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &trans  &left_mod_tap LSHFT C  &left_mod_tap LEFT_GUI S  &left_mod_tap LEFT_ALT I  &left_mod_tap LEFT_CONTROL E  &kp O  &kp D  &right_mod_tap RCTRL T  &right_mod_tap LEFT_ALT N  &right_mod_tap RIGHT_GUI R  &right_mod_tap RIGHT_SHIFT H  &trans  &trans  &kp V  &kp X  &kp LEFT_BRACKET  &kp SINGLE_QUOTE  &kp SEMI  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp MINUS  &trans  &trans  &trans  &trans  &kp SPACE  &trans
             >;
 
             label = "Ipad";
@@ -126,7 +126,7 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp PG_UP  &kp BACKSPACE  &kp UP  &kp DEL  &kp PG_DN  &trans  &kp N7  &kp N8  &kp N9  &trans  &none  &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &trans  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &trans  &trans  &trans  &kp ESC  &kp TAB  &kp INS  &kp RET  &none  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans  &trans  &trans  &kp SPACE  &trans  &kp N0  &kp RET
+&trans  &kp PG_UP  &kp BACKSPACE  &kp UP  &kp DEL  &kp PG_DN  &kp KP_MINUS  &kp N7  &kp N8  &kp N9  &kp KP_DIVIDE  &kp BACKSPACE  &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &kp PLUS  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp KP_MULTIPLY  &trans  &trans  &kp ESC  &kp TAB  &kp INS  &kp RET  &none  &kp KP_COMMA  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT  &trans  &trans  &trans  &kp SPACE  &trans  &kp N0  &kp RET
             >;
         };
 
