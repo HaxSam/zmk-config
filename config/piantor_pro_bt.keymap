@@ -76,7 +76,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&oa_qwerty  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LEFT_BRACKET  &kp CAPS  &left_mod_tap LEFT_SHIFT A  &left_mod_tap LEFT_GUI S  &left_mod_tap LEFT_ALT D  &left_mod_tap LCTRL F  &kp G  &kp H  &right_mod_tap RCTRL J  &right_mod_tap LEFT_ALT K  &right_mod_tap RGUI L  &right_mod_tap RIGHT_SHIFT SEMI  &kp LEFT_BRACKET  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET  &sl 7  &mo 6  &trans  &kp RET  &kp SPACE  &mo 6
+&oa_qwerty  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LEFT_BRACKET  &kp CAPS  &left_mod_tap LEFT_SHIFT A  &left_mod_tap LEFT_GUI S  &left_mod_tap LEFT_ALT D  &left_mod_tap LCTRL F  &kp G  &kp H  &right_mod_tap RCTRL J  &right_mod_tap LEFT_ALT K  &right_mod_tap RGUI L  &right_mod_tap RIGHT_SHIFT SEMI  &kp LEFT_BRACKET  &kp SCROLLLOCK  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET  &sl 7  &mo 6  &trans  &kp RET  &kp SPACE  &mo 6
             >;
         };
 
@@ -90,7 +90,7 @@
         Noted {
             display-name = "Noted";
             bindings = <
-&kp RA(W)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 6  &left_mod_tap LEFT_SHIFT C  &left_mod_tap LGUI S  &left_mod_tap LALT I  &left_mod_tap LCTRL E  &kp O  &kp D  &right_mod_tap RCTRL T  &right_mod_tap LEFT_ALT N  &right_mod_tap RGUI R  &right_mod_tap RSHFT H  &mo 6  &trans  &kp V  &kp X  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp RA(S)  &sl 7  &mo 6  &trans  &trans  &kp SPACE  &mo 6
+&kp RA(W)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 6  &left_mod_tap LEFT_SHIFT C  &left_mod_tap LGUI S  &left_mod_tap LALT I  &left_mod_tap LCTRL E  &kp O  &kp D  &right_mod_tap RCTRL T  &right_mod_tap LEFT_ALT N  &right_mod_tap RGUI R  &right_mod_tap RSHFT H  &mo 6  &kp SCROLLLOCK  &kp V  &kp X  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp RA(S)  &sl 7  &mo 6  &trans  &trans  &kp SPACE  &mo 6
             >;
         };
 
