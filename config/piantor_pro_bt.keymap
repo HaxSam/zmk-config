@@ -90,7 +90,7 @@
         Noted {
             display-name = "Noted";
             bindings = <
-&kp RA(W)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 6  &left_mod_tap LEFT_SHIFT C  &left_mod_tap LGUI S  &left_mod_tap LALT I  &left_mod_tap LCTRL E  &kp O  &kp D  &right_mod_tap RCTRL T  &right_mod_tap LEFT_ALT N  &right_mod_tap RGUI R  &right_mod_tap RSHFT H  &mo 6  &kp SCROLLLOCK  &kp V  &kp X  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp RA(S)  &sl 7  &mo 6  &trans  &trans  &kp SPACE  &mo 6
+&kp RA(W)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 4  &left_mod_tap LEFT_SHIFT C  &left_mod_tap LGUI S  &left_mod_tap LALT I  &left_mod_tap LCTRL E  &kp O  &kp D  &right_mod_tap RCTRL T  &right_mod_tap LEFT_ALT N  &right_mod_tap RGUI R  &right_mod_tap RSHFT H  &mo 4  &kp SCROLLLOCK  &kp V  &kp X  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp RA(S)  &sl 7  &mo 6  &trans  &trans  &kp SPACE  &mo 6
             >;
         };
 
