@@ -23,9 +23,11 @@
                 <&macro_press>,
                 <&kp CAPS>,
                 <&macro_tap>,
-                <&kp EQUAL &kp R>,
+                <&kp EQUAL>,
                 <&macro_release>,
-                <&kp CAPS>;
+                <&kp CAPS>,
+                <&macro_tap>,
+                <&kp R>;
 
             label = "OA_QWERTY";
         };
@@ -44,7 +46,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp RPAR  &trans  &mt LEFT_SHIFT A  &mt CAPS S  &mt LCTRL D  &mt LWIN F  &kp G  &kp H  &mt RWIN J  &mt RCTRL K  &mt CAPS L  &mt RIGHT_SHIFT SEMI  &kp SQT  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &oa_qwerty  &sl 5  &mo 3  &trans  &kp RET  &kp SPACE  &mo 3
+&trans  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp RIGHT_PARENTHESIS  &trans  &mt LEFT_SHIFT A  &mt CAPS S  &mt LCTRL D  &mt LWIN F  &kp G  &kp H  &mt RWIN J  &mt RCTRL K  &mt CAPS L  &mt RIGHT_SHIFT SEMI  &kp SQT  &trans  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &oa_qwerty  &sl 5  &mo 3  &trans  &kp RET  &kp SPACE  &mo 3
             >;
         };
 
