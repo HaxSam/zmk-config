@@ -105,14 +105,14 @@
         mod_3_layer {
             display-name = "Mod 3";
             bindings = <
-&trans  &kp UNDER  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp UNDER  &kp LBKT  &kp RBKT  &kp RS(NUMBER_6)  &kp EXCL  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL  &kp AMPS  &kp AT  &trans  &kp BSLH  &kp FSLH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp ASTRK  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp COLON  &trans  &trans  &kp HASH  &kp LA(N5)  &kp PIPE  &kp TILDE  &kp GRAVE  &kp PLUS  &kp PERCENT  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp SEMI  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         ipad_mod3 {
             display-name = "Mod 3i";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LS(SLASH)  &kp LA(N5)  &kp LA(NUMBER_6)  &kp GRAVE  &kp EXCL  &kp NON_US_BSLH  &kp LS(NUBS)  &kp LS(N0)  &kp LS(NUMBER_6)  &kp LA(L)  &kp SPACE  &kp LS(LA(N7))  &kp LS(N7)  &kp LA(N8)  &kp LA(N9)  &kp LS(BACKSLASH)  &kp LS(MINUS)  &kp LS(N8)  &kp LS(N9)  &kp SLASH  &kp LS(DOT)  &kp SPACE  &kp SPACE  &kp NON_US_HASH  &kp LA(E)  &kp LA(N7)  &kp LA(LS(N8))  &kp LS(EQUAL)  &kp BACKSLASH  &kp LS(N5)  &kp LS(NUMBER_2)  &kp LS(NON_US_HASH)  &kp LS(COMMA)  &kp SPACE  &kp SPACE  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
