@@ -152,7 +152,7 @@
 
         Ipad {
             bindings = <
-&kp RA(A)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 5  &left_mod_tap LSHFT C  &left_mod_tap LEFT_GUI S  &left_mod_tap LEFT_ALT I  &left_mod_tap LEFT_CONTROL E  &kp O  &kp D  &right_mod_tap RCTRL T  &right_mod_tap LEFT_ALT N  &right_mod_tap RIGHT_GUI R  &right_mod_tap RIGHT_SHIFT H  &mo 5  &trans  &kp V  &kp X  &kp LEFT_BRACKET  &kp SINGLE_QUOTE  &kp SEMI  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp MINUS  &trans  &trans  &trans  &trans  &kp SPACE  &trans
+&kp RA(A)  &kp Y  &kp Z  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 5  &left_mod_tap LSHFT C  &left_mod_tap LEFT_GUI S  &left_mod_tap LEFT_ALT I  &left_mod_tap LEFT_CONTROL E  &kp O  &kp D  &right_mod_tap RCTRL T  &right_mod_tap LEFT_ALT N  &right_mod_tap RIGHT_GUI R  &right_mod_tap RIGHT_SHIFT H  &mo 5  &trans  &kp V  &kp X  &kp LEFT_BRACKET  &kp SINGLE_QUOTE  &kp SEMI  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp MINUS  &trans  &trans  &trans  &trans  &kp SPACE  &trans
             >;
 
             label = "Ipad";
