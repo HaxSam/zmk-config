@@ -146,13 +146,13 @@
         Noted {
             display-name = "Noted";
             bindings = <
-&kp RA(W)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 4  &left_mod_tap LEFT_SHIFT C  &left_mod_tap LGUI S  &left_mod_tap LALT I  &left_mod_tap LCTRL E  &kp O  &kp D  &right_mod_tap RCTRL T  &right_mod_tap LEFT_ALT N  &right_mod_tap RGUI R  &right_mod_tap RSHFT H  &mo 4  &kp SCROLLLOCK  &kp V  &kp X  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp RA(S)  &sl 7  &mo 6  &mo 8  &trans  &kp SPACE  &mo 6
+&kp RA(W)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 4  &left_mod_tap LEFT_SHIFT C  &left_mod_tap LGUI S  &left_mod_tap LALT I  &left_mod_tap LCTRL E  &kp O  &kp D  &right_mod_tap RCTRL T  &right_mod_tap LEFT_ALT N  &right_mod_tap RGUI R  &right_mod_tap RSHFT H  &mo 4  &kp SCROLLLOCK  &kp V  &kp X  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp RA(S)  &sl 7  &mo 6  &mo 8  &none  &kp SPACE  &mo 6
             >;
         };
 
         Ipad {
             bindings = <
-&kp RA(A)  &kp Y  &kp Z  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 5  &left_mod_tap LSHFT C  &left_mod_tap LEFT_GUI S  &left_mod_tap LEFT_ALT I  &left_mod_tap LEFT_CONTROL E  &kp O  &kp D  &right_mod_tap RCTRL T  &right_mod_tap LEFT_ALT N  &right_mod_tap RIGHT_GUI R  &right_mod_tap RIGHT_SHIFT H  &mo 5  &trans  &kp V  &kp X  &kp LEFT_BRACKET  &kp SINGLE_QUOTE  &kp SEMI  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp MINUS  &trans  &trans  &trans  &trans  &kp SPACE  &trans
+&kp RA(A)  &kp Y  &kp Z  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 5  &left_mod_tap LSHFT C  &left_mod_tap LEFT_GUI S  &left_mod_tap LEFT_ALT I  &left_mod_tap LEFT_CONTROL E  &kp O  &kp D  &right_mod_tap RCTRL T  &right_mod_tap LEFT_ALT N  &right_mod_tap RIGHT_GUI R  &right_mod_tap RIGHT_SHIFT H  &mo 5  &none  &kp V  &kp X  &kp LEFT_BRACKET  &kp SINGLE_QUOTE  &kp SEMI  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp MINUS  &trans  &trans  &trans  &trans  &kp SPACE  &trans
             >;
 
             label = "Ipad";
@@ -161,14 +161,14 @@
         mod_3_layer {
             display-name = "Mod 3";
             bindings = <
-&trans  &kp RA(LS(SEMI))  &kp UNDER  &kp LBKT  &kp RBKT  &huetchen_noted  &kp EXCL  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL  &kp AMPS  &kp AT  &trans  &kp BSLH  &kp FSLH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp ASTRK  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp COLON  &trans  &trans  &kp HASH  &kp RA(N5)  &kp PIPE  &tilde_noted  &kp GRAVE  &kp PLUS  &kp PERCENT  &quote_noted  &single_quote_noted  &kp SEMI  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp RA(LS(SEMI))  &kp UNDER  &kp LBKT  &kp RBKT  &huetchen_noted  &kp EXCL  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL  &kp AMPS  &kp AT  &none  &kp BSLH  &kp FSLH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp ASTRK  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp COLON  &none  &none  &kp HASH  &kp RA(N5)  &kp PIPE  &tilde_noted  &kp GRAVE  &kp PLUS  &kp PERCENT  &quote_noted  &single_quote_noted  &kp SEMI  &none  &to 7  &none  &none  &none  &none  &none
             >;
         };
 
         ipad_mod3 {
             display-name = "Mod 3i";
             bindings = <
-&trans  &kp LS(NON_US_BSLH)  &kp LS(SLASH)  &kp LA(N5)  &kp LA(NUMBER_6)  &huetchen_ipad  &kp EXCL  &kp GRAVE  &kp LS(GRAVE)  &kp LS(N0)  &kp LS(NUMBER_6)  &kp LA(L)  &kp SPACE  &kp LS(LA(N7))  &kp LS(N7)  &kp LA(N8)  &kp LA(N9)  &kp LS(RIGHT_BRACKET)  &kp LS(MINUS)  &kp LS(N8)  &kp LS(N9)  &kp SLASH  &kp LS(DOT)  &kp SPACE  &kp SPACE  &kp NON_US_HASH  &kp LA(E)  &kp LA(N7)  &tilde_ipad  &kp LS(EQUAL)  &kp RIGHT_BRACKET  &kp LS(N5)  &kp LS(NUMBER_2)  &kp LS(NON_US_HASH)  &kp LS(COMMA)  &kp SPACE  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &kp LS(NON_US_BSLH)  &kp LS(SLASH)  &kp LA(N5)  &kp LA(NUMBER_6)  &huetchen_ipad  &kp EXCL  &kp GRAVE  &kp LS(GRAVE)  &kp LS(N0)  &kp LS(NUMBER_6)  &kp LA(L)  &none  &kp LS(LA(N7))  &kp LS(N7)  &kp LA(N8)  &kp LA(N9)  &kp LS(RIGHT_BRACKET)  &kp LS(MINUS)  &kp LS(N8)  &kp LS(N9)  &kp SLASH  &kp LS(DOT)  &none  &none  &kp NON_US_HASH  &kp LA(E)  &kp LA(N7)  &tilde_ipad  &kp LS(EQUAL)  &kp RIGHT_BRACKET  &kp LS(N5)  &kp LS(NUMBER_2)  &kp LS(NON_US_HASH)  &kp LS(COMMA)  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -189,14 +189,14 @@
         layer_switching_and_bluetooth {
             display-name = "Layers";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 6  &to 8  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &to 0  &to 1  &to 2  &to 3  &trans  &trans  &bt BT_CLR  &trans  &trans  &trans  &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none  &none  &to 6  &to 9  &none  &none  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &to 0  &to 1  &to 2  &to 3  &none  &none  &bt BT_CLR  &none  &none  &none  &studio_unlock  &none  &none  &none  &none  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         f_keys_and_media {
             display-name = "F Layer";
             bindings = <
-&trans  &trans  &trans  &kp C_PREVIOUS  &kp C_NEXT  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans  &trans  &trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans  &trans  &kp C_PLAY_PAUSE  &trans  &trans  &trans  &trans
+&none  &none  &none  &kp C_PREVIOUS  &kp C_NEXT  &none  &none  &kp F7  &kp F8  &kp F9  &kp F10  &none  &none  &none  &none  &kp C_VOL_DN  &kp C_VOLUME_UP  &none  &none  &kp F4  &kp F5  &kp F6  &kp F11  &none  &none  &none  &none  &none  &none  &none  &none  &kp F1  &kp F2  &kp F3  &kp F12  &none  &trans  &kp C_PLAY_PAUSE  &trans  &trans  &trans  &trans
             >;
         };
     };
