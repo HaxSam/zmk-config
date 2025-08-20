@@ -132,21 +132,21 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&oa_qwerty  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LEFT_BRACKET  &kp CAPS  &left_mod_tap LEFT_SHIFT A  &left_mod_tap LEFT_GUI S  &left_mod_tap LEFT_ALT D  &left_mod_tap LCTRL F  &kp G  &kp H  &right_mod_tap RCTRL J  &right_mod_tap LEFT_ALT K  &right_mod_tap RGUI L  &right_mod_tap RIGHT_SHIFT SEMI  &kp CAPS  &kp SCROLLLOCK  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET  &sl 7  &mo 6  &trans  &kp RET  &kp SPACE  &mo 6
+&oa_qwerty  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LEFT_BRACKET  &kp CAPS  &left_mod_tap LEFT_SHIFT A  &left_mod_tap LEFT_GUI S  &left_mod_tap LEFT_ALT D  &left_mod_tap LCTRL F  &kp G  &kp H  &right_mod_tap RCTRL J  &right_mod_tap LEFT_ALT K  &right_mod_tap RGUI L  &right_mod_tap RIGHT_SHIFT SEMI  &kp CAPS  &kp SCROLLLOCK  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_BRACKET  &sl 7  &mo 6  &mo 8  &none  &kp SPACE  &mo 6
             >;
         };
 
         gaming_layer {
             display-name = "Gaming";
             bindings = <
-&kp TAB  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LPAR  &kp CAPS  &kp A  &kp S  &kp D  &kp F  &trans  &trans  &kp J  &kp K  &kp L  &kp SEMI  &kp SINGLE_QUOTE  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RSHFT  &sl 7  &kp SPACE  &kp SPACE  &trans  &kp SPACE  &trans
+&kp TAB  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LPAR  &kp CAPS  &kp A  &kp S  &kp D  &kp F  &trans  &trans  &kp J  &kp K  &kp L  &kp SEMI  &kp SINGLE_QUOTE  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp RSHFT  &sl 7  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE
             >;
         };
 
         Noted {
             display-name = "Noted";
             bindings = <
-&kp RA(W)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 4  &left_mod_tap LEFT_SHIFT C  &left_mod_tap LGUI S  &left_mod_tap LALT I  &left_mod_tap LCTRL E  &kp O  &kp D  &right_mod_tap RCTRL T  &right_mod_tap LEFT_ALT N  &right_mod_tap RGUI R  &right_mod_tap RSHFT H  &mo 4  &kp SCROLLLOCK  &kp V  &kp X  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp RA(S)  &sl 7  &mo 6  &trans  &trans  &kp SPACE  &mo 6
+&kp RA(W)  &kp Z  &kp Y  &kp U  &kp A  &kp Q  &kp P  &kp B  &kp M  &kp L  &kp F  &kp J  &mo 4  &left_mod_tap LEFT_SHIFT C  &left_mod_tap LGUI S  &left_mod_tap LALT I  &left_mod_tap LCTRL E  &kp O  &kp D  &right_mod_tap RCTRL T  &right_mod_tap LEFT_ALT N  &right_mod_tap RGUI R  &right_mod_tap RSHFT H  &mo 4  &kp SCROLLLOCK  &kp V  &kp X  &kp RA(Y)  &kp RA(Q)  &kp RA(P)  &kp W  &kp G  &kp COMMA  &kp DOT  &kp K  &kp RA(S)  &sl 7  &mo 6  &mo 8  &trans  &kp SPACE  &mo 6
             >;
         };
 
@@ -168,7 +168,7 @@
         ipad_mod3 {
             display-name = "Mod 3i";
             bindings = <
-&trans  &kp LS(NON_US_BSLH)  &kp LS(SLASH)  &kp LA(N5)  &kp LA(NUMBER_6)  &huetchen_ipad  &kp EXCL  &kp GRAVE  &kp LS(GRAVE)  &kp LS(N0)  &kp LS(NUMBER_6)  &kp LA(L)  &kp SPACE  &kp LS(LA(N7))  &kp LS(N7)  &kp LA(N8)  &kp LA(N9)  &kp LS(RIGHT_BRACKET)  &kp LS(MINUS)  &kp LS(N8)  &kp LS(N9)  &kp SLASH  &kp LS(DOT)  &kp SPACE  &kp SPACE  &kp NON_US_HASH  &kp LA(E)  &kp LA(N7)  &tilde_ipad  &kp LS(EQUAL)  &kp RIGHT_BRACKET  &kp LS(N5)  &kp LS(NUMBER_2)  &kp LS(NON_US_HASH)  &kp LS(COMMA)  &kp SPACE  &kp SPACE  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(NON_US_BSLH)  &kp LS(SLASH)  &kp LA(N5)  &kp LA(NUMBER_6)  &huetchen_ipad  &kp EXCL  &kp GRAVE  &kp LS(GRAVE)  &kp LS(N0)  &kp LS(NUMBER_6)  &kp LA(L)  &kp SPACE  &kp LS(LA(N7))  &kp LS(N7)  &kp LA(N8)  &kp LA(N9)  &kp LS(RIGHT_BRACKET)  &kp LS(MINUS)  &kp LS(N8)  &kp LS(N9)  &kp SLASH  &kp LS(DOT)  &kp SPACE  &kp SPACE  &kp NON_US_HASH  &kp LA(E)  &kp LA(N7)  &tilde_ipad  &kp LS(EQUAL)  &kp RIGHT_BRACKET  &kp LS(N5)  &kp LS(NUMBER_2)  &kp LS(NON_US_HASH)  &kp LS(COMMA)  &kp SPACE  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -182,21 +182,21 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp PG_UP  &kp BACKSPACE  &kp UP  &kp DEL  &kp PG_DN  &kp KP_MINUS  &kp N7  &kp N8  &kp N9  &kp KP_DIVIDE  &kp BACKSPACE  &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &kp PLUS  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp KP_MULTIPLY  &trans  &trans  &kp ESC  &kp TAB  &kp INS  &kp RET  &none  &kp KP_COMMA  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT  &trans  &trans  &trans  &kp SPACE  &trans  &kp N0  &kp RET
+&trans  &kp PG_UP  &kp BACKSPACE  &kp UP  &kp DEL  &kp PG_DN  &kp KP_MINUS  &kp N7  &kp N8  &kp N9  &kp KP_DIVIDE  &kp BACKSPACE  &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &kp PLUS  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp KP_MULTIPLY  &trans  &trans  &kp ESC  &kp TAB  &kp INS  &kp RET  &kp PRINTSCREEN  &kp KP_COMMA  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT  &trans  &trans  &trans  &trans  &trans  &kp N0  &kp RET
             >;
         };
 
         layer_switching_and_bluetooth {
             display-name = "Layers";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 6  &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &to 0  &to 1  &to 2  &to 3  &trans  &trans  &bt BT_CLR  &trans  &trans  &trans  &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 6  &to 8  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &to 0  &to 1  &to 2  &to 3  &trans  &trans  &bt BT_CLR  &trans  &trans  &trans  &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         f_keys_and_media {
             display-name = "F Layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp C_PREVIOUS  &kp C_NEXT  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans  &trans  &trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans  &trans  &kp C_PLAY_PAUSE  &trans  &trans  &trans  &trans
             >;
         };
     };
