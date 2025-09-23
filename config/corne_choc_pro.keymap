@@ -4,124 +4,261 @@
  * SPDX-License-Identifier: MIT
  */
 
+#ifndef KEYMAP_DRAWER
+
+#include "keys_de.h"
+
+#endif
+
+#include "zmk-helpers/helper.h"
+
+// Source desired key-position labels
+
+#include "zmk-helpers/key-labels/36.h"
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
-/ {
-    chosen {
-        zmk,physical-layout = &five_col_layout;
-    };
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <175>;
+};
+
+&mt {
+    flavor = "balanced";
+    tapping-term-ms = <175>;
 };
 
 / {
+    chosen { zmk,physical-layout = &five_col_layout; };
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        Copy {
+            bindings = <&copy>;
+            key-positions = <20 21>;
+            layers = <0 1 2 3>;
+            timeout-ms = <17>;
+            require-prior-idle-ms = <150>;
+        };
+
+        Paste {
+            bindings = <&paste>;
+            key-positions = <21 22>;
+            layers = <0 1 2 3>;
+            timeout-ms = <17>;
+            require-prior-idle-ms = <150>;
+        };
+
+        Cut {
+            bindings = <&kp LC(DE_X)>;
+            key-positions = <22 23>;
+            layers = <0 1 2 3>;
+            timeout-ms = <17>;
+            require-prior-idle-ms = <150>;
+        };
+
+        Backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <7 8>;
+            timeout-ms = <17>;
+            require-prior-idle-ms = <150>;
+            layers = <1 3>;
+        };
+
+        Esc {
+            bindings = <&kp ESC>;
+            key-positions = <2 1>;
+            timeout-ms = <17>;
+            require-prior-idle-ms = <150>;
+            layers = <1 3 0>;
+        };
+
+        Comma {
+            bindings = <&kp COMMA>;
+            key-positions = <13 12>;
+            timeout-ms = <17>;
+            require-prior-idle-ms = <150>;
+            layers = <0 3>;
+        };
+
+        Dot {
+            bindings = <&kp DOT>;
+            key-positions = <16 17>;
+            timeout-ms = <17>;
+            require-prior-idle-ms = <150>;
+            layers = <0 3>;
+        };
+    };
+
+    behaviors {
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HomeRowModLeft";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <195>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <30 31 32 33 34 35 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
+            require-prior-idle-ms = <145>;
+        };
+
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HomeRowModRight";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <195>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <30 31 33 34 35 32 0 4 10 11 12 13 14 20 21 22 23 24 1 2 3>;
+            require-prior-idle-ms = <145>;
+        };
+
+        lml: lml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LayerTapModLeft";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <195>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <30 31 32 33 34 35 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
+            require-prior-idle-ms = <145>;
+        };
+
+        lmr: lmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LayenTabModRight";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <195>;
+            quick-tap-ms = <175>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <30 31 33 34 35 32 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
+            require-prior-idle-ms = <145>;
+        };
+
+        copy: copy {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COPY";
+            bindings = <&kp LC(INS)>, <&kp LC(DE_C)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PASTE";
+            bindings = <&kp LS(INS)>, <&kp LC(DE_V)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            display-name = "QWERTY";
+        write {
+            display-name = "NOTED";
+
             // ------------------------------------------------------------------------------
             // |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Y  |  U   |  I  |  O  |  P  |
             // |  A  |  S  |  D  |  F  |  G  |  LALT |  RALT |  H  |  J   |  K  |  L  |  ;  |
             // |  Z  |  X  |  C  |  V  |  B  |               |  N  |  M   |  ,  |  .  |  /  |
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
+
             bindings = <
-                &kp Q &kp W &kp E &kp R &kp T &kp C_MUTE &kp C_PP &kp Y &kp U  &kp I     &kp O   &kp P
-                &kp A &kp S &kp D &kp F &kp G &kp LALT   &kp RALT &kp H &kp J  &kp K     &kp L   &kp SEMI
-                &kp Z &kp X &kp C &kp V &kp B                     &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-                            &kp LGUI &mo 1 &kp SPACE              &kp RET &mo 2 &kp RALT
+  &kp DE_Z         &kp DE_Y        &hml LGUI DE_U   &kp DE_A         &kp DE_Q             &kp DE_P     &kp DE_B         &hmr LGUI DE_M  &kp DE_L        &kp DE_SZ
+  &hml LCTRL DE_C  &hml LALT DE_S  &lml 1 DE_I      &hml LSHFT DE_E  &kp DE_O             &kp DE_D     &hmr RSHFT DE_T  &lmr 1 DE_N     &hmr LALT DE_R  &hmr LCTRL DE_H
+  &kp DE_V         &kp DE_X        &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT      &kp DE_W     &kp DE_G         &kp DE_F        &kp DE_J        &kp DE_K
+                                   &kp LCTRL        &lt 3 TAB        &kp BACKSPACE        &lt 2 SPACE  &kp ENTER        &mo 6
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
 
-        lower_layer {
-            display-name = "NUMBER";
+        code {
+            display-name = "SYMBOL";
+
             // --------------------------------------------------------------------------------
             // |  1  |  2  |  3  |  4  |  5    |  LCTRL | RCTRL |  6  |  7  |  8  |  9  |  0  |
             // | BT1 | BT2 | BT3 | BT4 | BT5   |  LALT  | RALT  | LFT | DWN |  UP | RGT |     |
             // | BTCR| RGB | RST | BOOT| Unlock|        |       |     |     |     |     |     |
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
+
             bindings = <
-                &kp N1       &kp N2          &kp N3       &kp N4       &kp N5       &kp LCTRL &kp RCTRL &kp N6   &kp N7   &kp N8 &kp N9    &kp N0
-                &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp LALT  &kp RALT  &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
-                &bt BT_CLR   &rgb_ug RGB_TOG &sys_reset   &bootloader  &studio_unlock                   &trans   &trans   &trans &trans    &trans
-                                             &kp LGUI     &trans       &kp SPACE                        &kp LGUI &trans   &kp SPACE
+  &kp DE_AT    &kp DE_UNDER  &kp DE_LBKT  &kp DE_RBKT   &kp DE_CARET      &kp DE_EXCL   &kp DE_LT     &kp DE_GT    &kp DE_EQUAL  &kp DE_AMPS
+  &kp DE_BSLH  &kp DE_FSLH   &kp DE_LBRC  &kp DE_RBRC   &kp DE_ASTRK      &kp DE_QMARK  &kp DE_LPAR   &kp DE_RPAR  &kp DE_MINUS  &kp DE_SEMI
+  &kp DE_HASH  &kp DE_DLLR   &kp DE_PIPE  &kp DE_TILDE  &kp DE_GRAVE      &kp DE_PLUS   &kp DE_COLON  &kp DE_DQT   &kp DE_SQT    &kp DE_PRCNT
+                             &none        &trans        &trans            &trans        &trans        &none
             >;
         };
 
-        raise_layer {
-            display-name = "SYMBOL";
+        navigation {
+            display-name = "NAV";
+
             // -----------------------------------------------------------------------------
             // |  !  |  @  |  #  |  $  |  %  | LCTRL | RCTRL |  ^  |  &  |  *  |  (  |  )  |
             // |     |     |     |     |     |  LALT | RALT  |  -  |  =  |  [  |  ]  |  \  |
             // |     |     |     |     |     |               |  _  |  +  |  {  |  }  | "|" |
             //                    | GUI |     | SPC |               | ENT |     | ALT |
+
             bindings = <
-                &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &kp LCTRL &kp RCTRL &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR
-                &trans   &trans &trans   &trans   &trans    &kp LALT  &kp RALT  &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH
-                &trans   &trans &trans   &trans   &trans                        &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE
-                                &kp LGUI &trans   &kp SPACE                     &kp RET   &trans    &kp RALT
+  &kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LS(LC(RIGHT))  &none      &kp TAB  &kp BACKSPACE  &kp UP    &kp RET    &kp PAGE_UP
+  &kp LCTRL         &kp LALT      &none          &kp LSHFT          &none      &kp DEL  &kp LEFT       &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
+  &none             &none         &none          &none              &none      &none    &kp HOME       &kp INS   &kp END    &kp ESC
+                                  &none          &none              &none      &to 0    &none          &none
             >;
         };
 
-        extra_layer_1 {
-            display-name = "EXTRA 1";
+        numbers {
+            display-name = "NUMPAD";
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans
-                              &trans &trans &trans               &trans &trans &trans       
+  &kp F1         &kp F2        &hml LGUI F3  &kp F4         &kp F5       &kp LS(DE_A)   &kp N7         &kp N8     &kp N9  &kp LS(DE_D)
+  &hml LCTRL F6  &hml LALT F7  &kp F8        &hml LSHFT F9  &kp F10      &kp LS(DE_B)   &kp N4         &kp N5     &kp N6  &kp LS(DE_E)
+  &kp F11        &kp F12       &kp F13       &kp F14        &kp F15      &kp LS(DE_C)   &kp N1         &kp N2     &kp N3  &kp LS(DE_F)
+                               &none         &to 0          &none        &hmr RSHFT N0  &mt LALT DE_X  &kp LCTRL
             >;
         };
 
-        extra_layer_2 {
-            display-name = "EXTRA 2";
+        gamemod {
+            display-name = "GAME";
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans
-                              &trans &trans &trans               &trans &trans &trans       
+  &kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E   &kp DE_R       &tog 5  &none  &none  &none  &none
+  &kp LSHFT  &kp DE_A  &kp DE_S  &kp DE_D   &kp DE_F       &none   &none  &none  &none  &none
+  &kp ESC    &kp DE_Z  &kp DE_X  &kp DE_C   &kp DE_V       &none   &none  &none  &none  &none
+                       &kp RET   &kp LSHFT  &kp SPACE      &none   &none  &mo 6
             >;
         };
 
-        extra_layer_3 {
-            display-name = "EXTRA 3";
+        game1 {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans
-                              &trans &trans &trans               &trans &trans &trans       
+  &trans  &trans  &trans  &trans  &trans      &none  &none     &kp UP    &none      &none
+  &trans  &trans  &trans  &trans  &trans      &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none
+  &trans  &trans  &trans  &trans  &trans      &none  &none     &none     &none      &none
+                  &trans  &trans  &trans      &none  &tog 5    &trans
             >;
+
+            label = "ISAAC";
         };
 
-        extra_layer_4 {
-            display-name = "EXTRA 4";
+        functions {
+            display-name = "FN";
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans
-                              &trans &trans &trans               &trans &trans &trans       
-            >;
-        };
-
-        extra_layer_5 {
-            display-name = "EXTRA 5";
-            bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans
-                              &trans &trans &trans               &trans &trans &trans       
-            >;
-        };
-
-        extra_layer_6 {
-            display-name = "EXTRA 6";
-            bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans
-                              &trans &trans &trans               &trans &trans &trans       
+  &none         &none            &none         &none         &none             &kp PRINTSCREEN  &none       &none         &none         &none
+  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &to 0            &to 2       &to 3         &to 4         &none
+  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &none             &none            &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE
+                                 &none         &none         &none             &none            &none       &none
             >;
         };
     };

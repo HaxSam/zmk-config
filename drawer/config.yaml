@@ -1,0 +1,151 @@
+parse_config:
+  zmk_additional_includes: 
+    - "zmk-helpers/include"
+    
+  zmk_preamble: |
+    #define KEYMAP_DRAWER
+
+  zmk_remove_keycode_prefix:
+    - DE_
+    - KP_
+
+  toggle_label: ""
+    
+  raw_binding_map:
+    "&sys_reset": Reset
+    "&bootloader": Boot
+
+    "&bt BT_SEL 0": BT 1
+    "&bt BT_SEL 1": BT 2
+    "&bt BT_SEL 2": BT 3
+    "&bt BT_SEL 3": BT 4
+
+    "&kp PRINTSCREEN": "$$mdi:fit-to-screen-outline$$"
+
+    "&copy": $$mdi:content-copy$$
+    "&paste": $$mdi:content-paste$$
+    "&kp LC(DE_X)": $$mdi:content-cut$$
+
+    "&kp LS(LC(LEFT))": Prev Word Sel
+    "&kp LC(LEFT)": Prev Word
+    "&kp LC(RIGHT)": Next Word
+    "&kp LS(LC(RIGHT))": Next Word Sel
+    
+  zmk_combos: {}
+
+  zmk_keycode_map:
+    # custom mappings
+    LALT: Alt
+    RALT: Alt
+    LCTRL: $$mdi:apple-keyboard-control$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    LGUI: $$mdi:apple-keyboard-command$$
+    RGUI: $$mdi:apple-keyboard-command$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+
+    SPACE: $$mdi:keyboard-space$$
+    BSPC: $$mdi:backspace$$
+    BACKSPACE: $$mdi:backspace$$
+    DEL: $$mdi:backspace-reverse$$
+    ESC: ESC
+    RET: $$mdi:keyboard-return$$
+    SPACE: $$mdi:keyboard-space$$
+    TAB: $$mdi:keyboard-tab$$
+
+    PG_UP: PgUp
+    PG_DN: PgDn
+    INS: Ins
+    HOME: Home
+    END: End
+
+    UP: $$mdi:chevron-up$$
+    DOWN: $$mdi:chevron-down$$
+    LEFT: $$mdi:chevron-left$$
+    RIGHT: $$mdi:chevron-right$$
+
+    C_MUTE: $$mdi:volume-off$$
+    C_PP: $$mdi:play-pause$$
+    C_VOL_UP: $$mdi:volume-high$$
+    C_VOL_DN: $$mdi:volume-medium$$
+    C_NEXT: $$mdi:skip-forward$$
+    C_PREV: $$mdi:skip-backward$$
+    C_PLAY_PAUSE: $$mdi:play-pause$$
+
+    NUMLOCK: NUM LOCK
+    
+    SZ: ß
+    U_UMLAUT: Ü
+    A_UMLAUT: Ä
+    O_UMLAUT: Ö
+
+    # defaults
+    AMPERSAND: "&"
+    AMPS: "&"
+    APOS: "'"
+    APOSTROPHE: "'"
+    ASTERISK: "*"
+    ASTRK: "*"
+    AT: "@"
+    AT_SIGN: "@"
+    BACKSLASH: \
+    BSLH: \
+    CARET: ^
+    COLON: ":"
+    COMMA: ","
+    DLLR: $
+    DOLLAR: $
+    DOT: .
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    EQUAL: "="
+    EXCL: "!"
+    EXCLAMATION: "!"
+    FSLH: /
+    GRAVE: "`"
+    GREATER_THAN: ">"
+    GT: ">"
+    HASH: "#"
+    LBKT: "["
+    LBRC: "{"
+    LEFT_BRACE: "{"
+    LEFT_BRACKET: "["
+    LEFT_PARENTHESIS: (
+    LESS_THAN: <
+    LPAR: (
+    LT: <
+    MINUS: "-"
+    NON_US_BACKSLASH: \
+    NON_US_BSLH: "|"
+    NON_US_HASH: "#"
+    NUHS: "#"
+    PERCENT: "%"
+    PERIOD: .
+    PIPE: "|"
+    PIPE2: "|"
+    PLUS: +
+    POUND: "#"
+    PRCNT: "%"
+    QMARK: "?"
+    QUESTION: "?"
+    RBKT: "]"
+    RBRC: "}"
+    RIGHT_BRACE: "}"
+    RIGHT_BRACKET: "]"
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    SEMI: ;
+    SEMICOLON: ;
+    SINGLE_QUOTE: "'"
+    SLASH: /
+    SQT: "'"
+    STAR: "*"
+    TILDE: "~"
+    TILDE2: "~"
+    UNDER: _
+    UNDERSCORE: _
+
+draw_config:
+  append_colon_to_layer_header: false
+  dark_mode: auto
+  footer_text: "haxsam/zmk-config"

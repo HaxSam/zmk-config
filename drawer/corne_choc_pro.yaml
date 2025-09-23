@@ -1,0 +1,248 @@
+layout: {zmk_keyboard: corne_choc_pro, layout_name: five_col_layout}
+layers:
+  NOTED:
+  - Z
+  - Y
+  - {t: U, h: '$$mdi:apple-keyboard-command$$'}
+  - A
+  - Q
+  - P
+  - B
+  - {t: M, h: '$$mdi:apple-keyboard-command$$'}
+  - L
+  - ß
+  - {t: C, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: Alt}
+  - {t: I, h: SYMBOL}
+  - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
+  - O
+  - D
+  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: N, h: SYMBOL}
+  - {t: R, h: Alt}
+  - {t: H, h: '$$mdi:apple-keyboard-control$$'}
+  - V
+  - X
+  - Ü
+  - Ä
+  - Ö
+  - W
+  - G
+  - F
+  - J
+  - K
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:keyboard-tab$$', h: NUMPAD}
+  - $$mdi:backspace$$
+  - {t: '$$mdi:keyboard-space$$', h: NAV}
+  - ENTER
+  - FN
+  SYMBOL:
+  - '@'
+  - _
+  - '['
+  - ']'
+  - ^
+  - '!'
+  - <
+  - '>'
+  - '='
+  - '&'
+  - \
+  - /
+  - {t: '{', type: held}
+  - '}'
+  - '*'
+  - '?'
+  - (
+  - )
+  - '-'
+  - ;
+  - '#'
+  - $
+  - '|'
+  - '~'
+  - '`'
+  - +
+  - ':'
+  - '"'
+  - ''''
+  - '%'
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  NAV:
+  - Prev Word Sel
+  - Prev Word
+  - Next Word
+  - Next Word Sel
+  - ''
+  - $$mdi:keyboard-tab$$
+  - $$mdi:backspace$$
+  - $$mdi:chevron-up$$
+  - $$mdi:keyboard-return$$
+  - PAGE UP
+  - $$mdi:apple-keyboard-control$$
+  - Alt
+  - ''
+  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - $$mdi:backspace-reverse$$
+  - $$mdi:chevron-left$$
+  - $$mdi:chevron-down$$
+  - $$mdi:chevron-right$$
+  - PAGE DOWN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Home
+  - Ins
+  - End
+  - ESC
+  - ''
+  - ''
+  - ''
+  - {t: NOTED, type: held}
+  - ''
+  - ''
+  NUMPAD:
+  - F1
+  - F2
+  - {t: F3, h: '$$mdi:apple-keyboard-command$$'}
+  - F4
+  - F5
+  - Sft+A
+  - '7'
+  - '8'
+  - '9'
+  - Sft+D
+  - {t: F6, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F7, h: Alt}
+  - F8
+  - {t: F9, h: '$$mdi:apple-keyboard-shift$$'}
+  - F10
+  - Sft+B
+  - '4'
+  - '5'
+  - '6'
+  - Sft+E
+  - F11
+  - F12
+  - F13
+  - F14
+  - F15
+  - Sft+C
+  - '1'
+  - '2'
+  - '3'
+  - Sft+F
+  - ''
+  - {t: NOTED, type: held}
+  - ''
+  - {t: '0', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: X, h: Alt}
+  - $$mdi:apple-keyboard-control$$
+  GAME: ['$$mdi:keyboard-tab$$', Q, W, E, R, ISAAC, '', '', '', '', '$$mdi:apple-keyboard-shift$$', A, S, D, F, '', '', '', '', '', ESC, Z, X, C, V, '', '', '', '',
+    '', '$$mdi:keyboard-return$$', '$$mdi:apple-keyboard-shift$$', '$$mdi:keyboard-space$$', '', '', FN]
+  ISAAC:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - $$mdi:chevron-up$$
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - $$mdi:chevron-left$$
+  - $$mdi:chevron-down$$
+  - $$mdi:chevron-right$$
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ISAAC
+  - {t: ▽, type: trans}
+  FN:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:fit-to-screen-outline$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - {t: BT, h: '4'}
+  - NOTED
+  - NAV
+  - NUMPAD
+  - GAME
+  - ''
+  - BT CLR
+  - RGB TOG
+  - Reset
+  - Boot
+  - ''
+  - ''
+  - $$mdi:volume-off$$
+  - $$mdi:volume-medium$$
+  - $$mdi:volume-high$$
+  - $$mdi:play-pause$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+combos:
+- p: [20, 21]
+  k: $$mdi:content-copy$$
+  l: [NOTED, SYMBOL, NAV, NUMPAD]
+- p: [21, 22]
+  k: $$mdi:content-paste$$
+  l: [NOTED, SYMBOL, NAV, NUMPAD]
+- p: [22, 23]
+  k: $$mdi:content-cut$$
+  l: [NOTED, SYMBOL, NAV, NUMPAD]
+- p: [7, 8]
+  k: $$mdi:backspace$$
+  l: [SYMBOL, NUMPAD]
+- p: [2, 1]
+  k: ESC
+  l: [SYMBOL, NUMPAD, NOTED]
+- p: [13, 12]
+  k: ','
+  l: [NOTED, NUMPAD]
+- p: [16, 17]
+  k: .
+  l: [NOTED, NUMPAD]
