@@ -28,10 +28,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-  &kp DE_Z        &kp DE_Y       &mt LGUI DE_U    &kp DE_A         &kp DE_Q                       &kp DE_P   &kp DE_B        &mt LGUI DE_M  &kp DE_L       &kp DE_SZ
-  &mt LCTRL DE_C  &mt LALT DE_S  &lt 1 DE_I       &mt LSHFT DE_E   &kp DE_O                       &kp DE_D   &mt RSHFT DE_T  &lt 1 DE_N     &mt LALT DE_R  &mt LCTRL DE_H
-  &kp DE_V        &kp DE_X       &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT                &kp DE_W   &kp DE_G        &kp DE_F       &kp DE_J       &kp DE_K
-                                 &mo 8            &kp DE_COMMA     &lt 3 SPACE                    &lt 2 RET  &kp DOT         &mo 8
+  &kp DE_Z        &kp DE_Y       &mt LGUI DE_U    &kp DE_A         &kp DE_Q             &kp DE_P   &kp DE_B        &mt LGUI DE_M  &kp DE_L       &kp DE_SZ
+  &mt LCTRL DE_C  &mt LALT DE_S  &lt 1 DE_I       &mt LSHFT DE_E   &kp DE_O             &kp DE_D   &mt RSHFT DE_T  &lt 1 DE_N     &mt LALT DE_R  &mt LCTRL DE_H
+  &kp DE_V        &kp DE_X       &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT      &kp DE_W   &kp DE_G        &kp DE_F       &kp DE_J       &kp DE_K
+                                 &mo 8            &kp DE_COMMA     &lt 3 SPACE          &lt 2 RET  &kp DOT         &mo 8
             >;
         };
 
@@ -45,10 +45,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-  &kp DE_AT    &kp DE_UNDER  &kp DE_LBKT  &kp DE_RBKT   &kp DE_CARET                  &kp DE_EXCL   &kp DE_LT     &kp DE_GT    &kp DE_EQUAL  &kp DE_AMPS
-  &kp DE_BSLH  &kp DE_FSLH   &kp DE_LBRC  &kp DE_RBRC   &kp DE_ASTRK                  &kp DE_QMARK  &kp DE_LPAR   &kp DE_RPAR  &kp DE_MINUS  &kp DE_SEMI
-  &kp DE_HASH  &kp DE_DLLR   &kp DE_PIPE  &kp DE_TILDE  &kp DE_GRAVE                  &kt DE_PLUS   &kp DE_COLON  &kp DE_DQT   &kp DE_SQT    &kp DE_PRCNT
-                             &trans       &trans        &trans                        &trans        &trans        &trans
+  &kp DE_AT    &kp DE_UNDER  &kp DE_LBKT  &kp DE_RBKT   &kp DE_CARET      &kp DE_EXCL   &kp DE_LT     &kp DE_GT    &kp DE_EQUAL  &kp DE_AMPS
+  &kp DE_BSLH  &kp DE_FSLH   &kp DE_LBRC  &kp DE_RBRC   &kp DE_ASTRK      &kp DE_QMARK  &kp DE_LPAR   &kp DE_RPAR  &kp DE_MINUS  &kp DE_SEMI
+  &kp DE_HASH  &kp DE_DLLR   &kp DE_PIPE  &kp DE_TILDE  &kp DE_GRAVE      &kt DE_PLUS   &kp DE_COLON  &kp DE_DQT   &kp DE_SQT    &kp DE_PRCNT
+                             &trans       &trans        &trans            &trans        &trans        &trans
             >;
         };
 
@@ -62,70 +62,70 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-  &kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LS(LC(RIGHT))  &trans                  &trans   &kp BACKSPACE  &kp UP    &kp TAB    &kp PAGE_UP
-  &trans            &trans        &trans         &trans             &trans                  &kp DEL  &kp LEFT       &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
-  &trans            &trans        &trans         &trans             &trans                  &trans   &kp HOME       &kp INS   &kp END    &kp ESC
-                                  &trans         &to 4              &trans                  &trans   &trans         &trans
+  &kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LS(LC(RIGHT))  &trans      &trans   &kp BACKSPACE  &kp UP    &kp TAB    &kp PAGE_UP
+  &trans            &trans        &trans         &trans             &trans      &kp DEL  &kp LEFT       &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
+  &trans            &trans        &trans         &trans             &trans      &trans   &kp HOME       &kp INS   &kp END    &kp ESC
+                                  &trans         &to 4              &trans      &trans   &trans         &trans
             >;
         };
 
         extra_layer_1 {
             display-name = "NUMPAD";
             bindings = <
-  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &kp LS(DE_A)     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(DE_D)
-  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &kp LS(DE_B)     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(DE_E)
-  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &kp LS(DE_C)     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(DE_F)
-                    &trans   &trans   &trans                   &kp KP_NUMBER_0  &kp DE_X         &trans
+  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5       &kp LS(DE_A)     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(DE_D)
+  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10      &kp LS(DE_B)     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(DE_E)
+  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15      &kp LS(DE_C)     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(DE_F)
+                    &trans   &trans   &trans       &kp KP_NUMBER_0  &kp DE_X         &trans
             >;
         };
 
         extra_layer_2 {
             display-name = "EXTRA 2";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans                  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans      &trans  &trans  &trans
             >;
         };
 
         extra_layer_3 {
             display-name = "EXTRA 3";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans                  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans      &trans  &trans  &trans
             >;
         };
 
         extra_layer_4 {
             display-name = "EXTRA 4";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans                  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans      &trans  &trans  &trans
             >;
         };
 
         extra_layer_5 {
             display-name = "GAME";
             bindings = <
-  &kp TAB    &kp Q  &kp W   &kp E   &kp R                      &trans   &trans  &trans  &trans  &trans
-  &kp LSHFT  &kp A  &kp S   &kp D   &kp F                      &trans   &trans  &trans  &trans  &trans
-  &trans     &kp Z  &kp X   &kp C   &kp V                      &trans   &trans  &trans  &trans  &trans
-                    &trans  &trans  &kp SPACE                  &kp RET  &trans  &to 0
+  &kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R       &trans   &trans  &trans  &trans  &trans
+  &kp LSHFT  &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F       &trans   &trans  &trans  &trans  &trans
+  &trans     &kp DE_Z  &kp DE_X  &kp DE_C  &kp DE_V       &trans   &trans  &trans  &trans  &trans
+                       &trans    &trans    &kp SPACE      &kp RET  &trans  &to 0
             >;
         };
 
         extra_layer_6 {
             display-name = "MACRO";
             bindings = <
-  &trans        &trans           &trans        &trans        &trans                        &trans  &trans  &trans  &trans  &trans
-  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &trans  &trans  &trans  &trans  &trans
-  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &trans                        &trans  &trans  &trans  &trans  &trans
-                                 &trans        &trans        &trans                        &trans  &trans  &trans
+  &trans        &trans           &trans        &trans        &trans            &trans  &trans  &trans  &trans  &trans
+  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans  &trans  &trans  &trans  &trans
+  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &trans            &trans  &trans  &trans  &trans  &trans
+                                 &trans        &trans        &trans            &trans  &trans  &trans
             >;
         };
     };
