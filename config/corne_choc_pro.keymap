@@ -31,7 +31,7 @@
   &kp DE_Z        &kp DE_Y       &mt LGUI DE_U    &kp DE_A         &kp DE_Q             &kp DE_P     &kp DE_B        &mt LGUI DE_M  &kp DE_L       &kp DE_SZ
   &mt LCTRL DE_C  &mt LALT DE_S  &lt 1 DE_I       &mt LSHFT DE_E   &kp DE_O             &kp DE_D     &mt RSHFT DE_T  &lt 1 DE_N     &mt LALT DE_R  &mt LCTRL DE_H
   &kp DE_V        &kp DE_X       &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT      &kp DE_W     &kp DE_G        &kp DE_F       &kp DE_J       &kp DE_K
-                                 &mo 8            &kp DE_COMMA     &lt 3 RET            &lt 2 SPACE  &kp DOT         &mo 8
+                                 &kp LCTRL        &kp DE_COMMA     &lt 3 RET            &lt 2 SPACE  &kp DOT         &mo 8
             >;
         };
 
