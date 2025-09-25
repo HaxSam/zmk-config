@@ -63,7 +63,7 @@
 
             bindings = <
   &kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LS(LC(RIGHT))  &trans      &trans   &kp BACKSPACE  &kp UP    &kp TAB    &kp PAGE_UP
-  &trans            &trans        &trans         &trans             &trans      &kp DEL  &kp LEFT       &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
+  &kp LCTRL         &kp LALT      &none          &kp LSHIFT         &trans      &kp DEL  &kp LEFT       &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
   &trans            &trans        &trans         &trans             &trans      &trans   &kp HOME       &kp INS   &kp END    &kp ESC
                                   &trans         &to 4              &trans      &trans   &trans         &trans
             >;
@@ -72,9 +72,9 @@
         extra_layer_1 {
             display-name = "NUMPAD";
             bindings = <
-  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5       &kp LS(DE_A)     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(DE_D)
-  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10      &kp LS(DE_B)     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(DE_E)
-  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15      &kp LS(DE_C)     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(DE_F)
+  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5       &kp LS(DE_A)     &kp KP_N7        &kp KP_N8  &kp KP_N9       &kp LS(DE_D)
+  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10      &kp LS(DE_B)     &mt RSHFT KP_N4  &kp KP_N5  &mt LALT KP_N6  &mt LEFT_CONTROL LS(DE_E)
+  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15      &kp LS(DE_C)     &kp KP_N1        &kp KP_N2  &kp KP_N3       &kp LS(DE_F)
                     &trans   &trans   &trans       &kp KP_NUMBER_0  &kp DE_X         &trans
             >;
         };
