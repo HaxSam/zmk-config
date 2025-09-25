@@ -65,7 +65,7 @@
   &kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LS(LC(RIGHT))  &trans      &trans   &kp BACKSPACE  &kp UP    &kp TAB    &kp PAGE_UP
   &kp LCTRL         &kp LALT      &none          &kp LSHIFT         &trans      &kp DEL  &kp LEFT       &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
   &trans            &trans        &trans         &trans             &trans      &trans   &kp HOME       &kp INS   &kp END    &kp ESC
-                                  &trans         &to 4              &trans      &trans   &trans         &trans
+                                  &trans         &to 7              &trans      &trans   &trans         &trans
             >;
         };
 
