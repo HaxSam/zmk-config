@@ -188,11 +188,11 @@ layers:
   - ISAAC
   - {t: ▽, type: trans}
   FN:
+  - RGB BRD
+  - RGB BRI
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - RGB HUD
+  - RGB HUI
   - $$mdi:fit-to-screen-outline$$
   - ''
   - ''
