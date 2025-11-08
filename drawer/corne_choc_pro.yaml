@@ -37,6 +37,43 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - ENTER
   - FN
+  PONA:
+  - ''
+  - W
+  - T
+  - M
+  - ''
+  - ''
+  - S
+  - U
+  - J
+  - ''
+  - P
+  - K
+  - {t: L, h: SYMBOL}
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - ','
+  - .
+  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: SYMBOL}
+  - I
+  - O
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:keyboard-tab$$', h: NUMPAD}
+  - $$mdi:backspace$$
+  - {t: '$$mdi:keyboard-space$$', h: NAV}
+  - ENTER
+  - FN
   SYMBOL:
   - '@'
   - _
@@ -213,7 +250,7 @@ layers:
   - Reset
   - Boot
   - ''
-  - ''
+  - PONA
   - $$mdi:volume-off$$
   - $$mdi:volume-medium$$
   - $$mdi:volume-high$$
