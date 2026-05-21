@@ -1,6 +1,5 @@
 # SPDX-License-Identifier: MIT
 
-CONFIG_ZMK_KEYBOARD_NAME="Corne Choc Pro"
 CONFIG_ZMK_SPLIT=y
 
 # Enable deep sleep
