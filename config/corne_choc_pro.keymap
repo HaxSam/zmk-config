@@ -41,7 +41,7 @@
         Copy {
             bindings = <&copy>;
             key-positions = <20 21>;
-            layers = <0 2 3 4>;
+            layers = <0 1 2 3>;
             timeout-ms = <17>;
             require-prior-idle-ms = <150>;
         };
@@ -49,7 +49,7 @@
         Paste {
             bindings = <&paste>;
             key-positions = <21 22>;
-            layers = <0 2 3 4>;
+            layers = <0 1 2 3>;
             timeout-ms = <17>;
             require-prior-idle-ms = <150>;
         };
@@ -57,7 +57,7 @@
         Cut {
             bindings = <&kp LC(DE_X)>;
             key-positions = <22 23>;
-            layers = <0 2 3 4>;
+            layers = <0 1 2 3>;
             timeout-ms = <17>;
             require-prior-idle-ms = <150>;
         };
@@ -67,7 +67,7 @@
             key-positions = <7 8>;
             timeout-ms = <17>;
             require-prior-idle-ms = <150>;
-            layers = <2 4>;
+            layers = <1 3>;
         };
 
         Esc {
@@ -75,7 +75,7 @@
             key-positions = <2 1>;
             timeout-ms = <17>;
             require-prior-idle-ms = <150>;
-            layers = <2 4 0>;
+            layers = <1 3 0>;
         };
 
         Comma {
@@ -83,7 +83,7 @@
             key-positions = <13 12>;
             timeout-ms = <17>;
             require-prior-idle-ms = <150>;
-            layers = <0 4>;
+            layers = <0 3>;
         };
 
         Dot {
@@ -91,7 +91,7 @@
             key-positions = <16 17>;
             timeout-ms = <17>;
             require-prior-idle-ms = <150>;
-            layers = <0 4>;
+            layers = <0 3>;
         };
     };
 
@@ -165,6 +165,42 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        vim_up: vim_up {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VIM_UP";
+            bindings = <&kp UP>, <&kp K>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        vim_right: vim_right {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VIM_RIGHT";
+            bindings = <&kp RIGHT>, <&kp L>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        vim_down: vim_down {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VIM_DOWN";
+            bindings = <&kp DOWN>, <&kp J>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        vim_left: vim_left {
+            compatible = "zmk,behavior-mod-morph";
+            label = "VIM_LEFT";
+            bindings = <&kp LEFT>, <&kp H>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
     };
 
     keymap {
@@ -181,19 +217,9 @@
 
             bindings = <
   &kp DE_Z         &kp DE_Y        &hml LGUI DE_U   &kp DE_A         &kp DE_Q             &kp DE_P     &kp DE_B         &hmr LGUI DE_M  &kp DE_L        &kp DE_SZ
-  &hml LCTRL DE_C  &hml LALT DE_S  &lml 2 DE_I      &hml LSHFT DE_E  &kp DE_O             &kp DE_D     &hmr RSHFT DE_T  &lmr 2 DE_N     &hmr LALT DE_R  &hmr LCTRL DE_H
+  &hml LCTRL DE_C  &hml LALT DE_S  &lml 1 DE_I      &hml LSHFT DE_E  &kp DE_O             &kp DE_D     &hmr RSHFT DE_T  &lmr 1 DE_N     &hmr LALT DE_R  &hmr LCTRL DE_H
   &kp DE_V         &kp DE_X        &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT      &kp DE_W     &kp DE_G         &kp DE_F        &kp DE_J        &kp DE_K
-                                   &kp LCTRL        &lt 4 TAB        &kp BACKSPACE        &lt 3 SPACE  &kp ENTER        &mo 7
-            >;
-        };
-
-        Toki {
-            display-name = "PONA";
-            bindings = <
-  &none  &kp W  &kp T     &kp M         &none              &none        &kp S         &kp U     &kp J  &none
-  &kp P  &kp K  &lml 2 L  &hml LSHFT N  &kp COMMA          &kp DOT      &hmr RSHFT A  &lmr 2 E  &kp I  &kp O
-  &none  &none  &none     &none         &none              &none        &none         &none     &none  &none
-                &none     &lt 4 TAB     &kp BACKSPACE      &lt 3 SPACE  &kp ENTER     &mo 7
+                                   &kp LCTRL        &lt 3 TAB        &kp BACKSPACE        &lt 2 SPACE  &kp ENTER        &mo 6
             >;
         };
 
@@ -224,9 +250,9 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-  &kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LS(LC(RIGHT))  &none      &kp TAB  &kp BACKSPACE  &kp UP    &kp RET    &kp PAGE_UP
-  &kp LCTRL         &kp LALT      &none          &kp LSHFT          &none      &kp DEL  &kp LEFT       &kp DOWN  &kp RIGHT  &kp PAGE_DOWN
-  &none             &none         &none          &none              &none      &none    &kp HOME       &kp INS   &kp END    &kp ESC
+  &kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LS(LC(RIGHT))  &none      &kp TAB  &kp BACKSPACE  &vim_up    &kp RET     &kp PAGE_UP
+  &kp LCTRL         &kp LALT      &none          &kp LSHFT          &none      &kp DEL  &vim_left      &vim_down  &vim_right  &kp PAGE_DOWN
+  &none             &none         &none          &none              &none      &none    &kp HOME       &kp INS    &kp END     &kp ESC
                                   &none          &none              &none      &to 0    &none          &none
             >;
         };
@@ -244,10 +270,10 @@
         gamemod {
             display-name = "GAME";
             bindings = <
-  &kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E   &kp DE_R       &tog 6  &none  &none  &none  &none
+  &kp TAB    &kp DE_Q  &kp DE_W  &kp DE_E   &kp DE_R       &tog 5  &none  &none  &none  &none
   &kp LSHFT  &kp DE_A  &kp DE_S  &kp DE_D   &kp DE_F       &none   &none  &none  &none  &none
   &kp ESC    &kp DE_Z  &kp DE_X  &kp DE_C   &kp DE_V       &none   &none  &none  &none  &none
-                       &kp RET   &kp LSHFT  &kp SPACE      &none   &none  &mo 7
+                       &kp RET   &kp LSHFT  &kp SPACE      &none   &none  &mo 6
             >;
         };
 
@@ -256,7 +282,7 @@
   &trans  &trans  &trans  &trans  &trans      &none  &none     &kp UP    &none      &none
   &trans  &trans  &trans  &trans  &trans      &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none
   &trans  &trans  &trans  &trans  &trans      &none  &none     &none     &none      &none
-                  &trans  &trans  &trans      &none  &tog 6    &trans
+                  &trans  &trans  &trans      &none  &tog 5    &trans
             >;
 
             label = "ISAAC";
@@ -266,9 +292,19 @@
             display-name = "FN";
             bindings = <
   &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none         &rgb_ug RGB_HUD  &rgb_ug RGB_HUI      &kp PRINTSCREEN  &none       &none         &none         &none
-  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4         &to 0            &to 3       &to 4         &to 5         &none
-  &bt BT_CLR       &rgb_ug RGB_TOG  &sys_reset    &bootloader      &none                &to 1            &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE
+  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4         &to 0            &to 2       &to 3         &to 4         &none
+  &bt BT_CLR       &rgb_ug RGB_TOG  &sys_reset    &bootloader      &none                &to 7            &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE
                                     &none         &none            &none                &none            &none       &none
+            >;
+        };
+
+        Toki {
+            display-name = "PONA";
+            bindings = <
+  &none  &kp W  &kp T     &kp M         &none              &none        &kp S         &kp U     &kp J  &none
+  &kp P  &kp K  &lml 1 L  &hml LSHFT N  &kp COMMA          &kp DOT      &hmr RSHFT A  &lmr 1 E  &kp I  &kp O
+  &none  &none  &none     &none         &none              &none        &none         &none     &none  &none
+                &none     &lt 3 TAB     &kp BACKSPACE      &lt 2 SPACE  &kp ENTER     &mo 6
             >;
         };
     };

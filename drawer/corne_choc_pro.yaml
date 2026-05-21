@@ -37,43 +37,6 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - ENTER
   - FN
-  PONA:
-  - ''
-  - W
-  - T
-  - M
-  - ''
-  - ''
-  - S
-  - U
-  - J
-  - ''
-  - P
-  - K
-  - {t: L, h: SYMBOL}
-  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
-  - ','
-  - .
-  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: E, h: SYMBOL}
-  - I
-  - O
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: '$$mdi:keyboard-tab$$', h: NUMPAD}
-  - $$mdi:backspace$$
-  - {t: '$$mdi:keyboard-space$$', h: NAV}
-  - ENTER
-  - FN
   SYMBOL:
   - '@'
   - _
@@ -119,7 +82,7 @@ layers:
   - ''
   - $$mdi:keyboard-tab$$
   - $$mdi:backspace$$
-  - $$mdi:chevron-up$$
+  - {t: '$$mdi:chevron-up$$', s: K}
   - $$mdi:keyboard-return$$
   - PAGE UP
   - $$mdi:apple-keyboard-control$$
@@ -128,9 +91,9 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - ''
   - $$mdi:backspace-reverse$$
-  - $$mdi:chevron-left$$
-  - $$mdi:chevron-down$$
-  - $$mdi:chevron-right$$
+  - {t: '$$mdi:chevron-left$$', s: H}
+  - {t: '$$mdi:chevron-down$$', s: J}
+  - {t: '$$mdi:chevron-right$$', s: L}
   - PAGE DOWN
   - ''
   - ''
@@ -261,6 +224,43 @@ layers:
   - ''
   - ''
   - {type: held}
+  PONA:
+  - ''
+  - W
+  - T
+  - M
+  - ''
+  - ''
+  - S
+  - U
+  - J
+  - ''
+  - P
+  - K
+  - {t: L, h: SYMBOL}
+  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
+  - ','
+  - .
+  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: E, h: SYMBOL}
+  - I
+  - O
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:keyboard-tab$$', h: NUMPAD}
+  - $$mdi:backspace$$
+  - {t: '$$mdi:keyboard-space$$', h: NAV}
+  - ENTER
+  - FN
 combos:
 - p: [20, 21]
   k: $$mdi:content-copy$$
