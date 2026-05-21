@@ -87,7 +87,7 @@ layers:
   - PAGE UP
   - $$mdi:apple-keyboard-control$$
   - Alt
-  - ''
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-shift$$
   - ''
   - $$mdi:backspace-reverse$$

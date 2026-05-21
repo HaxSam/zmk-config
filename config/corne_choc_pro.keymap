@@ -172,7 +172,7 @@
             bindings = <&kp UP>, <&kp K>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RSFT)>;
         };
 
         vim_right: vim_right {
@@ -181,7 +181,7 @@
             bindings = <&kp RIGHT>, <&kp L>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RSFT)>;
         };
 
         vim_down: vim_down {
@@ -190,7 +190,7 @@
             bindings = <&kp DOWN>, <&kp J>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RSFT)>;
         };
 
         vim_left: vim_left {
@@ -199,7 +199,7 @@
             bindings = <&kp LEFT>, <&kp H>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_RSFT)>;
         };
     };
 
@@ -251,7 +251,7 @@
 
             bindings = <
   &kp LS(LC(LEFT))  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LS(LC(RIGHT))  &none      &kp TAB  &kp BACKSPACE  &vim_up    &kp RET     &kp PAGE_UP
-  &kp LCTRL         &kp LALT      &none          &kp LSHFT          &none      &kp DEL  &vim_left      &vim_down  &vim_right  &kp PAGE_DOWN
+  &kp LCTRL         &kp LALT      &kp RSHFT      &kp LSHFT          &none      &kp DEL  &vim_left      &vim_down  &vim_right  &kp PAGE_DOWN
   &none             &none         &none          &none              &none      &none    &kp HOME       &kp INS    &kp END     &kp ESC
                                   &none          &none              &none      &to 0    &none          &none
             >;
