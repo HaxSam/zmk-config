@@ -32,8 +32,8 @@ layers:
   - J
   - K
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-tab$$', h: NUMPAD}
   - $$mdi:backspace$$
+  - {t: '$$mdi:keyboard-tab$$', h: NUMPAD}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - ENTER
   - FN
@@ -143,8 +143,8 @@ layers:
   - '3'
   - Sft+F
   - ''
-  - {t: NOTED, type: held}
-  - ''
+  - NOTED
+  - {type: held}
   - {t: '0', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: Alt}
   - $$mdi:apple-keyboard-control$$
@@ -213,7 +213,7 @@ layers:
   - Reset
   - Boot
   - ''
-  - PONA
+  - ''
   - $$mdi:volume-off$$
   - $$mdi:volume-medium$$
   - $$mdi:volume-high$$
@@ -224,43 +224,6 @@ layers:
   - ''
   - ''
   - {type: held}
-  PONA:
-  - ''
-  - W
-  - T
-  - M
-  - ''
-  - ''
-  - S
-  - U
-  - J
-  - ''
-  - P
-  - K
-  - {t: L, h: SYMBOL}
-  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
-  - ','
-  - .
-  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: E, h: SYMBOL}
-  - I
-  - O
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: '$$mdi:keyboard-tab$$', h: NUMPAD}
-  - $$mdi:backspace$$
-  - {t: '$$mdi:keyboard-space$$', h: NAV}
-  - ENTER
-  - FN
 combos:
 - p: [20, 21]
   k: $$mdi:content-copy$$

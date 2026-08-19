@@ -219,7 +219,7 @@
   &kp DE_Z         &kp DE_Y        &hml LGUI DE_U   &kp DE_A         &kp DE_Q             &kp DE_P     &kp DE_B         &hmr LGUI DE_M  &kp DE_L        &kp DE_SZ
   &hml LCTRL DE_C  &hml LALT DE_S  &lml 1 DE_I      &hml LSHFT DE_E  &kp DE_O             &kp DE_D     &hmr RSHFT DE_T  &lmr 1 DE_N     &hmr LALT DE_R  &hmr LCTRL DE_H
   &kp DE_V         &kp DE_X        &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT      &kp DE_W     &kp DE_G         &kp DE_F        &kp DE_J        &kp DE_K
-                                   &kp LCTRL        &lt 3 TAB        &kp BACKSPACE        &lt 2 SPACE  &kp ENTER        &mo 6
+                                   &kp LCTRL        &kp BACKSPACE    &lt 3 TAB            &lt 2 SPACE  &kp ENTER        &mo 6
             >;
         };
 
@@ -293,18 +293,8 @@
             bindings = <
   &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none         &rgb_ug RGB_HUD  &rgb_ug RGB_HUI      &kp PRINTSCREEN  &none       &none         &none         &none
   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4         &to 0            &to 2       &to 3         &to 4         &none
-  &bt BT_CLR       &rgb_ug RGB_TOG  &sys_reset    &bootloader      &none                &to 7            &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE
+  &bt BT_CLR       &rgb_ug RGB_TOG  &sys_reset    &bootloader      &none                &none            &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PLAY_PAUSE
                                     &none         &none            &none                &none            &none       &none
-            >;
-        };
-
-        Toki {
-            display-name = "PONA";
-            bindings = <
-  &none  &kp W  &kp T     &kp M         &none              &none        &kp S         &kp U     &kp J  &none
-  &kp P  &kp K  &lml 1 L  &hml LSHFT N  &kp COMMA          &kp DOT      &hmr RSHFT A  &lmr 1 E  &kp I  &kp O
-  &none  &none  &none     &none         &none              &none        &none         &none     &none  &none
-                &none     &lt 3 TAB     &kp BACKSPACE      &lt 2 SPACE  &kp ENTER     &mo 6
             >;
         };
     };
