@@ -31,7 +31,7 @@ layers:
   - F
   - J
   - K
-  - $$mdi:apple-keyboard-control$$
+  - NUMPAD
   - $$mdi:backspace$$
   - {t: '$$mdi:keyboard-tab$$', h: NUMPAD}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
@@ -69,7 +69,7 @@ layers:
   - ''''
   - '%'
   - ''
-  - {t: ▽, type: trans}
+  - $$mdi:keyboard-tab$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -142,9 +142,9 @@ layers:
   - '2'
   - '3'
   - Sft+F
-  - ''
-  - NOTED
   - {type: held}
+  - NOTED
+  - ''
   - {t: '0', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: X, h: Alt}
   - $$mdi:apple-keyboard-control$$

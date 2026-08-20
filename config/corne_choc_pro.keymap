@@ -219,7 +219,7 @@
   &kp DE_Z         &kp DE_Y        &hml LGUI DE_U   &kp DE_A         &kp DE_Q             &kp DE_P     &kp DE_B         &hmr LGUI DE_M  &kp DE_L        &kp DE_SZ
   &hml LCTRL DE_C  &hml LALT DE_S  &lml 1 DE_I      &hml LSHFT DE_E  &kp DE_O             &kp DE_D     &hmr RSHFT DE_T  &lmr 1 DE_N     &hmr LALT DE_R  &hmr LCTRL DE_H
   &kp DE_V         &kp DE_X        &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT      &kp DE_W     &kp DE_G         &kp DE_F        &kp DE_J        &kp DE_K
-                                   &kp LCTRL        &kp BACKSPACE    &lt 3 TAB            &lt 2 SPACE  &kp ENTER        &mo 6
+                                   &mo 3            &kp BACKSPACE    &lt 3 TAB            &lt 2 SPACE  &kp ENTER        &mo 6
             >;
         };
 
@@ -236,7 +236,7 @@
   &kp DE_AT    &kp DE_UNDER  &kp DE_LBKT  &kp DE_RBKT   &kp DE_CARET      &kp DE_EXCL   &kp DE_LT     &kp DE_GT    &kp DE_EQUAL  &kp DE_AMPS
   &kp DE_BSLH  &kp DE_FSLH   &kp DE_LBRC  &kp DE_RBRC   &kp DE_ASTRK      &kp DE_QMARK  &kp DE_LPAR   &kp DE_RPAR  &kp DE_MINUS  &kp DE_SEMI
   &kp DE_HASH  &kp DE_DLLR   &kp DE_PIPE  &kp DE_TILDE  &kp DE_GRAVE      &kp DE_PLUS   &kp DE_COLON  &kp DE_DQT   &kp DE_SQT    &kp DE_PRCNT
-                             &none        &trans        &trans            &trans        &trans        &none
+                             &none        &kp TAB       &trans            &trans        &trans        &none
             >;
         };
 
